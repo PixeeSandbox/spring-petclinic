@@ -121,6 +121,27 @@
       <optional>true</optional>
     </dependency>
 
+    <!-- Tier 1 (declared only): log4j-core 2.14.1 — CVE-2021-44228 (Log4Shell), critical -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.14.1</version>
+    </dependency>
+
+    <!-- Tier 2 (imported, unused): commons-io 2.6 — CVE-2021-29425, medium -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+    </dependency>
+
+    <!-- Tier 3 (used, replaceable): guava 31.1-jre — CVE-2023-2976 -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa-test</artifactId>
